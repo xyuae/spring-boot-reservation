@@ -1,4 +1,4 @@
-## Spring development with spring boot
+## Spring Cloud development with spring boot
 - Data Access
 - The Service Tier
     - Build a service abstraction
@@ -8,6 +8,9 @@
     - Thymeleaf as a rendering engine
     - Test
 - Exposing our services through RESTful Endpoints
+- Microservices
+    - Document microservices with Swagger
+- External Configuration
 
 ### Data Access
 Spring data provides a common set of interfaces for a variety of data-sources and technologies

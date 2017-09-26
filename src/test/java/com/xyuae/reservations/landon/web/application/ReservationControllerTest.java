@@ -52,6 +52,6 @@ public class ReservationControllerTest {
         mockReservationList.add(mockRoomReservation);
 
         given(reservationService.getRoomReservationForDate("2017-01-01")).willReturn(mockReservationList);
-        this.mockMvc.perform(get("http://localhost:8080/api/reservations/2017-01-01")).andExpect(status().isOk()).andExpect(content().string(containsString("Test, JUnit")));
+        this.mockMvc.perform(get("http://localhost:8080/reservations?date=2017-01-01")).andExpect(status().isOk()).andExpect(content().string(containsString("Test, JUnit")));
     }
 }
